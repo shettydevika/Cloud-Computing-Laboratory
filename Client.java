@@ -16,7 +16,7 @@ public class Client {
 			String encryptedMessage = AESEncryptionUtil.encrypt(message, key);
 			System.out.println("Encrypted Message" + encryptedMessage);
 			
-			//Send encrypted message to the server
+			// Send encrypted message to the server
 			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
 			out.println(encryptedMessage);
 			
